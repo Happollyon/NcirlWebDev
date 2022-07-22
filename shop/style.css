@@ -13,10 +13,35 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100%;
     width: 100%;
     
+}
+#search-cont{
+    width: 45.53%;
+    height: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+#search-input{
+    width: 90%;
+    height: 100%;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 91%;
+    height:34.16% ;
+    border: 1px solid #363b3f ;
 }
 
 #rooms{
@@ -39,7 +64,18 @@ body{
     width: 12.7%;
     height: 80%;
     background-color:white;
-}   
+}  
+.room-active{
+    border:1px solid #363b3f;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 12.7%;
+    height: 80%;
+    background-color:#47A358;
+}  
 .room:hover{
     background-color: #47A358;
     color: #EBEBEB;
@@ -94,6 +130,7 @@ body{
     width: 100%;
     height: 5.64%;
     font-size: 2vw;
+    margin-top: 1vw;
  
 }
 .star{
