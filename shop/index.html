@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML 5 Boilerplate</title>
+        <link rel="stylesheet" href="./style.css">
+      
+    </head>
+
+    <body>
+
+        <div id="rooms">
+            <div class="room" id="all">ALL</div>
+            <div class="room" id="all">Bedroom</div>
+            <div class="room" id="all">Office</div>
+            <div class="room" id="all">kitchen</div>
+            <div class="room" id="all">Dinning</div>
+            <div class="room" id="all">Garden</div>
+        </div>
+
+        <div id="container">
+            <template>
+                <div class="item">
+                    <div class="img-cont">
+                            <img class="main-image" src=" https://www.ikea.com/ie/en/images/products/hemnes-day-bed-frame-with-3-drawers-white__0636371_pe697851_s5.jpg?f=m"/>
+                    </div>
+                    <div class="name">
+                      
+                    </div>
+                    <div class="star-cont">
+                        <img class="star" style="height:auto; width:5%;" src="./assets/star.png"/>
+                        <img class="star" style="height:auto; width:5%;" src="./assets/star.png"/>
+                        <img class="star" style="height:auto; width:5%;" src="./assets/star.png"/>
+                        <img class="star" style="height:auto; width:5%;" src="./assets/star.png"/>
+                        <img class="star" style="height:auto; width:5%;" src="./assets/star.png"/>
+                        <div style="margin-left: 1vw;">(39)</div>
+            
+                    </div>
+                    <div class="price-button-cont">
+                    <div class="price-cont" > 
+                            <div>
+                                Price
+                            </div>
+                            <div class= "price" style="color:#363b3f">
+                            
+                            </div>
+                        </div>
+                        <div class="add-button">
+                            Add to cart
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </body>
+
+    <script>
+        // Creating an object called xhttp
+        var xhttp = new XMLHttpRequest();
+        let xml ; // global var used to hold loaded xml data
+
+        //this code runs when document is loaded
+        xhttp.onreadystatechange =function(){
+            if(this.readyState == 4 && this.status == 200){
+                //code inside brackets is executed if xml is loaded corretly
+                xml = xhttp.responseXML;// loades xml info to global var so it can be accessed by all functions
+                LoadAll(); // calls fucntion to show all items
+            }};
+
+            xhttp.open("GET", "prod.xml",true);
+            xhttp.send();
+        
+        // this function loads all items
+        function LoadAll()
+        {   
+            // the code bellow saves the elements in a data structure. 
+            let nameXml= xml.getElementsByTagName("Name");
+            let DescriptionXml = xml.getElementsByTagName("Description")
+            let ImageXml = xml.getElementsByTagName("Image")
+            let Category = xml.getElementsByTagName("Category")
+            let priceXml = xml.getElementsByTagName("Price");
+            let qtyXml =  xml.getElementsByTagName("Qty");
+            let roomXml = xml.getElementsByTagName("Room");
+
+           
+            // loading the the templates structure in a constant 
+            const template = document.querySelector('template')
+
+            // interating over the data and appending to the HTML page.
+            for (let i =0; i< nameXml.length; i++){
+                
+                const elClone= template.content.cloneNode(true);// cloning the template 
+                elClone.querySelector('.name').textContent=nameXml[i].childNodes[0].nodeValue // adding the value the the correct palce in the template
+                elClone.querySelector('.price').textContent=priceXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
+                elClone.querySelector(".main-image").src=ImageXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
+               
+                document.querySelector('#container').appendChild(elClone); // appending the template to the html page. 
+            }
+            
+        
+        }
+       
+    </script>
+
+</html>
