@@ -13,21 +13,24 @@
     <body>
         <div id="search-cont">
             <div id="search">  
-                <img style ="width: 5%;height:auto;"id="seach-icon" src="./assets/search.png"/>     
-                <input id="search-input"/>
+               
+                    <img onclick="search()"  style ="width: 5%;height:auto;" id="search-icon" src="./assets/search.png"/>
+                    
+                <input  id="search-input"/>
             </div>
-            <div style="margin-top: 1vw;color: #decbcb;" id="item-searched">778-223</div>
+            <div style="margin-top: 1vw;color: #decbcb;" id="item-searched"></div>
         </div>
         <div id="rooms">
-            <div class="room-active" onclick="seletctRoom('all')" id="all">ALL</div>
+            <div class="room-active" onclick="LoadAll()" id="all">ALL</div>
             <div class="room" onclick="seletctRoom('Bedroom')" id="Bedroom">Bedroom</div>
             <div class="room" onclick="seletctRoom('Office')"id="Office">Office</div>
             <div class="room" onclick="seletctRoom('Kitchen')"id="Kitchen">Kitchen</div>
             <div class="room" onclick="seletctRoom('Dinning')"id="Dinning">Dinning</div>
             <div class="room" onclick="seletctRoom('Garden')"id="Garden">Garden</div>
+            <div class="room" onclick="seletctRoom('LivingRoom')"id="LivingRoom">Living Room</div>
         </div>
 
-        <div id="container">
+        
             <template>
                 <div class="item">
                     <div class="img-cont">
@@ -42,7 +45,7 @@
                         <img class="star" style="height:auto; width:5%;" src="./assets/star.png"/>
                         <img class="star" style="height:auto; width:5%;" src="./assets/star.png"/>
                         <img class="star" style="height:auto; width:5%;" src="./assets/star.png"/>
-                        <div style="margin-left: 1vw;">(39)</div>
+                        <div style="margin-left: 1vw;"><div class="qty"></div></div>
             
                     </div>
                     <div class="price-button-cont">
@@ -60,6 +63,7 @@
                     </div>
                 </div>
             </template>
+        <div id="container"></div>
         </div>
     </body>
 
@@ -67,7 +71,7 @@
         // Creating an object called xhttp
         var xhttp = new XMLHttpRequest();
         let xml ; // global var used to hold loaded xml data
-
+        
         //this code runs when document is loaded
         xhttp.onreadystatechange =function(){
             if(this.readyState == 4 && this.status == 200){
@@ -78,19 +82,29 @@
 
             xhttp.open("GET", "prod.xml",true);
             xhttp.send();
+
+        // this function returns an array with element values 
+        function returnAttributes(){
+         
+            let nameXml= xml.getElementsByTagName("Name");
+            let DescriptionXml = xml.getElementsByTagName("Description")
+            let ImageXml = xml.getElementsByTagName("Image")
+            let priceXml = xml.getElementsByTagName("Price");
+            let qtyXml =  xml.getElementsByTagName("Qty");
+            let roomXml = xml.getElementsByTagName("Room");
+            let producXml = xml.getElementsByTagName("Product")
+
+            return [nameXml,DescriptionXml,ImageXml,priceXml,qtyXml,roomXml,producXml]
+        }    
         
         // this function loads all items
         function LoadAll()
         {   
-            // the code bellow saves the elements in a data structure. 
-            let nameXml= xml.getElementsByTagName("Name");
-            let DescriptionXml = xml.getElementsByTagName("Description")
-            let ImageXml = xml.getElementsByTagName("Image")
-            let Category = xml.getElementsByTagName("Category")
-            let priceXml = xml.getElementsByTagName("Price");
-            let qtyXml =  xml.getElementsByTagName("Qty");
-            let roomXml = xml.getElementsByTagName("Room");
+            document.querySelector('.room-active').className="room"
+            document.getElementById('all').className = "room-active"
+            document.getElementById('container').innerHTML = "" // removes all previous items
 
+            let [nameXml, DescriptionXml, ImageXml,priceXml,qtyXml,roomXml,producXml] = returnAttributes()
            
             // loading the the templates structure in a constant 
             const template = document.querySelector('template')
@@ -101,6 +115,7 @@
                 const elClone= template.content.cloneNode(true);// cloning the template 
                 elClone.querySelector('.name').textContent=nameXml[i].childNodes[0].nodeValue // adding the value the the correct palce in the template
                 elClone.querySelector('.price').textContent=priceXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
+                elClone.querySelector('.qty').textContent=qtyXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
                 elClone.querySelector(".main-image").src=ImageXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
                
                 document.querySelector('#container').appendChild(elClone); // appending the template to the html page. 
@@ -110,10 +125,77 @@
         }
 
         function seletctRoom(room){
+
+           
             document.querySelector('.room-active').className="room"
             document.getElementById(room).className = "room-active"
+            document.getElementById('container').innerHTML = "" // removes all previous items
+
+             // saving the xml values into variables 
+             let [nameXml, DescriptionXml, ImageXml,priceXml,qtyXml,roomXml,producXml] = returnAttributes()
+
+             const template = document.querySelector('template') // coping the template 
+      
+             for (let i =0; i < nameXml.length; i++){
+                
+                if(roomXml[i].childNodes[0].nodeValue.toUpperCase().replace(/\s/g, "")===room.toUpperCase()){
+                const elClone= template.content.cloneNode(true);// cloning the template 
+                elClone.querySelector('.name').textContent=nameXml[i].childNodes[0].nodeValue // adding the value the the correct palce in the template
+                elClone.querySelector('.price').textContent=priceXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
+                elClone.querySelector(".main-image").src=ImageXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
+                elClone.querySelector('.qty').textContent=qtyXml[i].childNodes[0].nodeValue    
+                document.querySelector('#container').appendChild(elClone);
+                    }
+             }
+             
+
         }
+
+        // Get the input field
+        var input = document.getElementById("search-input");
+
+        // Execute a function when the user presses a key on the keyboard
+        input.addEventListener("keypress", function(event) {
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+            // Cancel the default action, if needed
+            event.preventDefault();
+            // Trigger the button element with a click
+            document.getElementById("search-icon").click();
+        }
+        });
        
+        function search(){
+            let val = document.getElementById("search-input").value
+            document.getElementById('container').innerHTML = "" // removes all previous items
+            document.getElementById('item-searched').innerText = val
+            // saving the xml values into variables 
+            let [nameXml, DescriptionXml, ImageXml,priceXml,qtyXml,roomXml,producXml] = returnAttributes()
+            
+            const template = document.querySelector('template') // coping the template 
+            let found = false
+             for (let i =0; i < nameXml.length; i++){
+                
+                if(producXml[i].getAttribute('code')===val){
+                    found = true     
+                    const elClone= template.content.cloneNode(true);// cloning the template 
+                    elClone.querySelector('.name').textContent=nameXml[i].childNodes[0].nodeValue // adding the value the the correct palce in the template
+                    elClone.querySelector('.price').textContent=priceXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
+                    elClone.querySelector(".main-image").src=ImageXml[i].childNodes[0].nodeValue// adding the value the the correct palce in the template
+                    elClone.querySelector('.qty').textContent=qtyXml[i].childNodes[0].nodeValue
+                    document.querySelector('#container').appendChild(elClone);
+                }
+             }
+
+             // alerts if no item found
+             if(!found){
+                alert('sorry! no Item with code: ' + val +" found" )
+                document.getElementById('item-searched').innerText = ""
+                LoadAll()
+             
+             }
+             
+        }
     </script>
 
 </html>

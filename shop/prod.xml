@@ -3,471 +3,676 @@
 
 
 <Inventory>
+    <Product code="111-999">
+		<Name>
+           DELSJÖN
+        </Name>
+		<Description>
+           Kitchen mixer tap, brass-colour
+        </Description>
+		<Qty>
+          3
+        </Qty>
+		<Price>
+            €75
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/delsjoen-kitchen-mixer-tap-brass-colour__1012016_pe828705_s5.jpg?f=xl
+        </Image>
+		<Category>
+        kitchen
+        </Category>
+		<Room>
+        kitchen
+        </Room>
+	</Product>
+    <Product code="555-333">
+		<Name>
+           VRENA
+        </Name>
+		<Description>
+           Worktop, oak/veneer, 246x2.8 cm
+        </Description>
+		<Qty>
+           111
+        </Qty>
+		<Price>
+           €150
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/vrena-worktop-oak-veneer__1012022_pe828714_s5.jpg?f=xl
+        </Image>
+		<Category>kitchen</Category>
+		<Room>kitchen</Room>
+	</Product>
+    <Product code="202-714">
+		<Name>
+           HÅLLBAR
 
-    <Product>
-        
-        <Name>
+        </Name>
+		<Description>
+           Bin with lid for organic waste, light grey, 10 l
+
+        </Description>
+		<Qty>
+          4
+        </Qty>
+		<Price>
+            €6
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/hallbar-bin-with-lid-for-organic-waste-light-grey__0742700_pe742765_s5.jpg?f=xl
+        </Image>
+		<Category>kitchen</Category>
+		<Room>kitchen</Room>
+	</Product>
+    <Product code="937-756">
+		<Name>
+           VATTUDALEN
+        </Name>
+		<Description>
+           Inset sink, 1 bowl with drainboard, stainless steel, 69x47 cm
+        </Description>
+		<Qty>
+           14
+        </Qty>
+		<Price>
+           €90
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/vattudalen-inset-sink-1-bowl-with-drainboard-stainless-steel__0754699_pe748050_s5.jpg?f=xl
+        </Image>
+		<Category>kitchen</Category>
+		<Room>kitchen</Room>
+	</Product>
+    <Product code="123-987">
+		<Name>
+           TILLREDA
+        </Name>
+		<Description>
+           Microwave oven, white
+            Included in this price is a contribution to recycling costs of €5
+
+        </Description>
+		<Qty>
+           77
+        </Qty>
+		<Price>
+           €99
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/tillreda-microwave-oven-white__0912596_pe783444_s5.jpg?f=xl
+        </Image>
+		<Category>kitchen</Category>
+		<Room>kitchen</Room>
+	</Product>
+    <Product code="148-329">
+		<Name>
+           INGATORP
+
+        </Name>
+		<Description>
+           Extendable table, white, 110/155 cm
+
+        </Description>
+		<Qty>
+           66
+        </Qty>
+		<Price>
+           €329
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/ingatorp-extendable-table-white__0737089_pe740879_s5.jpg?f=xl
+        </Image>
+		<Category>dinning</Category>
+		<Room>dinning</Room>
+	</Product>
+    <Product code="937-586">
+		<Name>
+           DANDERYD
+        </Name>
+		<Description>
+           Dining table, oak veneer/white, 130x80 cm
+        </Description>
+		<Qty>
+           14
+        </Qty>
+		<Price>
+           €199
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/danderyd-dining-table-oak-veneer-white__0918115_pe786051_s5.jpg?f=xl
+        </Image>
+		<Category>dinning</Category>
+		<Room>dinning</Room>
+	</Product>
+    <Product code="113-246">
+		<Name>
+           INGO
+
+        </Name>
+		<Description>
+           Table, pine, 120x75 cm
+
+        </Description>
+		<Qty>
+           114
+        </Qty>
+		<Price>
+           €59
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/ingo-table-pine__0737092_pe740877_s5.jpg?f=xl
+        </Image>
+		<Category>dinning</Category>
+		<Room>dinning</Room>
+	</Product>
+    <Product code="123-647">
+		<Name>
+           MARIEDAMM
+
+        </Name>
+		<Description>
+          Table, black marble effect, 105 cm
+
+        </Description>
+		<Qty>
+           1
+        </Qty>
+		<Price>
+           €199 
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/mariedamm-table-black-marble-effect__0916869_pe785444_s5.jpg?f=xl
+        </Image>
+		<Category>dinning</Category>
+		<Room>dinning</Room>
+	</Product>
+    <Product code="568-114">
+		<Name>
+           SKOGSTA
+        </Name>
+		<Description>
+           Dining table, acacia, 235x100 cm
+
+        </Description>
+		<Qty>
+           7
+        </Qty>
+		<Price>
+           €449
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/skogsta-dining-table-acacia__0546603_pe656255_s5.jpg?f=xl
+        </Image>
+		<Category>dinning</Category>
+		<Room>dinning</Room>
+	</Product>
+    <Product code="732-548">
+		<Name>
+           MUSKOTBLOMMA
+
+        </Name>
+		<Description>
+           Plant pot with saucer, in/outdoor terracotta, 15 cm
+
+        </Description>
+		<Qty>
+           73
+        </Qty>
+		<Price>
+           €6
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/muskotblomma-plant-pot-with-saucer-in-outdoor-terracotta__0953673_pe804269_s5.jpg?f=xl
+        </Image>
+		<Category>garden</Category>
+		<Room>garden</Room>
+	</Product>
+    <Product code="221-336">
+		<Name>
+           BINTJE
+
+        </Name>
+		<Description>
+           Plant pot, galvanised, 9 cm
+
+        </Description>
+		<Qty>
+           36
+        </Qty>
+		<Price>
+           €0.75
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/bintje-plant-pot-galvanised__0638860_pe699222_s5.jpg?f=xl
+        </Image>
+		<Category>garden</Category>
+		<Room>garden</Room>
+	</Product>
+    <Product code="441-659">
+		<Name>
+           FULLSPÄCKAD
+
+        </Name>
+		<Description>
+           Serving tray, bamboo/black, 28x20 cm
+
+        </Description>
+		<Qty>
+           9
+        </Qty>
+		<Price>
+           €15
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/fullspaeckad-serving-tray-bamboo-black__0799752_pe767617_s5.jpg?f=xl
+        </Image>
+		<Category>garden</Category>
+		<Room>garden</Room>
+	</Product>
+    <Product code="898-251">
+		<Name>
+           CHIAFRÖN
+
+        </Name>
+		<Description>
+           Plant pot, in/outdoor white, 12 cm
+
+        </Description>
+		<Qty>
+           9
+        </Qty>
+		<Price>
+           €6
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/chiafroen-plant-pot-in-outdoor-white__0951771_pe804351_s5.jpg?f=xl
+        </Image>
+		<Category>garden</Category>
+		<Room>garden</Room>
+	</Product>
+	<Product code="147-236">
+		<Name>
+           ASKHOLMEN
+        </Name>
+		<Description>
+           Flower box, light brown stained
+        </Description>
+		<Qty>
+           8
+        </Qty>
+		<Price>
+           €40
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/askholmen-flower-box-light-brown-stained__0237649_pe376922_s5.jpg?f=xl
+        </Image>
+		<Category>garden</Category>
+		<Room>garden</Room>
+	</Product>
+    <Product code="080-735">
+		<Name>
             HEMNES
         </Name>
-        <Code>
-            000-001
-        </Code>
-        <Description>
+		<Description>
             Day-bed frame with 3 drawers, white, 80x200 cm
         </Description>
-        <Qty>
+		<Qty>
             7
         </Qty>
-        <Price>
+		<Price>
             350
         </Price>
-        <Image>
+		<Image>
             https://www.ikea.com/ie/en/images/products/hemnes-day-bed-frame-with-3-drawers-white__0636371_pe697851_s5.jpg?f=m
         </Image>
-        <Category>bed</Category>
-        <Room>
-            bedroom
-        </Room>
-    </Product>
-
-     <Product>
-        
-        <Name>
+		<Category>bed</Category>
+		<Room>bedroom</Room>
+	</Product>
+	<Product code="480-135">
+		<Name>
            SLATTUM
         </Name>
-        <Code>
-           097-237
-        </Code>
-        <Description>
+		<Description>
             Upholstered bed frame, Knisa light grey, Standard Double
             Last chance to buy
         </Description>
-        <Qty>
+		<Qty>
            8
         </Qty>
-        <Price>
+		<Price>
            €215
         </Price>
-        <Image>
+		<Image>
             https://www.ikea.com/ie/en/images/products/slattum-upholstered-bed-frame-knisa-light-grey__0768244_pe754388_s5.jpg?f=m
         </Image>
-        <Category>
+		<Category>
             bed
         </Category>
-        <Room>
-        bedroom
-        </Room>
-    </Product>    
-    <Product>
-        
-        <Name>
+		<Room>bedroom</Room>
+	</Product>
+	<Product code="114-998">
+		<Name>
            FYRESDAL
         </Name>
-        <Code>
-           778-142
-        </Code>
-        <Description>
+		<Description>
             Day-bed frame, black, 80x200 cm
         </Description>
-        <Qty>
+		<Qty>
             11   
         </Qty>
-        <Price>
+		<Price>
            €229
         </Price>
-        <Image>
+		<Image>
             https://www.ikea.com/ie/en/images/products/fyresdal-day-bed-frame-black__0749151_pe745508_s5.jpg?f=m
         </Image>
-         <Category>
+		<Category>
             bed
         </Category>
-        <Room>
+		<Room>
             bedroom
         </Room>
-    </Product>
-    
-    <Product>
-        
-        <Name>
+	</Product>
+	<Product code="236-324">
+		<Name>
            IDANÄS
         </Name>
-        <Code>
-           
-        </Code>
-        <Description>
+		<Description>
             Upholstered storage bed, Gunnared pale pink, Standard Double
         </Description>
-        <Qty>
+		<Qty>
            17
         </Qty>
-        <Price>
+		<Price>
            €899
         </Price>
-        <Image>
+		<Image>
             https://www.ikea.com/ie/en/images/products/idanaes-upholstered-storage-bed-gunnared-pale-pink__0984265_pe816182_s5.jpg?f=m
         </Image>
-         <Category>
+		<Category>
             bed
         </Category>
-        <Room>
+		<Room>
             bedroom
         </Room>
-    </Product>
-    <Product>
-        
-        <Name>
+	</Product>
+	<Product code="117-632">
+		<Name>
            AVALDSNES
         </Name>
-        <Code>
-           769-553
-        </Code>
-        <Description>
+		<Description>
             Divan base with 2 drawers, dark grey, Standard Double
         </Description>
-        <Qty>
+		<Qty>
           2 
         </Qty>
-        <Price>
+		<Price>
            €1,149
         </Price>
-        <Image>
+		<Image>
             https://www.ikea.com/ie/en/images/products/avaldsnes-divan-base-with-2-drawers-dark-grey__0917230_pe785692_s5.jpg?f=m
         </Image>
-        <Category>
+		<Category>
             bed
         </Category>
-        <Room>
+		<Room>
             bedroom
         </Room>
-    </Product>
-    <Product>
-        
-        <Name>
+	</Product>
+	<Product code="114-887">
+		<Name>
            PLATSA
         </Name>
-        <Code>
-           665-121
-        </Code>
-        <Description>
+		<Description>
             Bed frame with storage, white, 140x200 cm
         </Description>
-        <Qty>
+		<Qty>
            7
         </Qty>
-        <Price>
+		<Price>
            €300
         </Price>
-        <Image>
+		<Image>
             https://www.ikea.com/ie/en/images/products/platsa-bed-frame-with-storage-white__0743693_pe743113_s5.jpg?f=m
         </Image>
-         <Category>
+		<Category>
             bed
         </Category>
-        <Room>
+		<Room>
             bedroom
         </Room>
-    </Product>
-      <Product>
-        
-        <Name>
+	</Product>
+	<Product code="141-865">
+		<Name>
          HAUGA
         </Name>
-        <Code>
-          773-339
-        </Code>
-        <Description>
+		<Description>
             TV/storage combination, grey, 277x46x199 cm
         </Description>
-        <Qty>
+		<Qty>
             8
         </Qty>
-        <Price>         
+		<Price>         
         €378
         </Price>
-        <Image>
+		<Image>
            https://www.ikea.com/ie/en/images/products/hauga-tv-storage-combination-grey__0917826_pe786008_s5.jpg?f=m
         </Image>
-        <Category>
+		<Category>
            midia Furniture
         </Category>
-        <Room>
+		<Room>
             Living room
         </Room>
-    </Product>
-     <Product>
-        
-        <Name>
+	</Product>
+	<Product code="117-008">
+		<Name>
          BESTÅ
         </Name>
-        <Code>
-          112-766
-        </Code>
-        <Description>
+		<Description>
             TV bench, white stained oak effect/Selsviken high-gloss/white, 180x42x39 cm
         </Description>
-        <Qty>
+		<Qty>
             78
         </Qty>
-        <Price>
+		<Price>
            €265
         </Price>
-        <Image>
+		<Image>
            https://www.ikea.com/ie/en/images/products/besta-tv-bench-white-stained-oak-effect-selsviken-high-gloss-white__0642955_pe701563_s5.jpg?f=m
         </Image>
-        <Category>
+		<Category>
             midia Furniture
         </Category>
-        <Room>
+		<Room>
             Living room
         </Room>
-    </Product>
-    <Product>
-        
-        <Name>
+	</Product>
+	<Product code="717-000">
+		<Name>
             BESTÅ
         </Name>
-        <Code>
-          882-222
-        </Code>
-        <Description>
+		<Description>
             TV bench, white stained oak effect/Selsviken/Nannarp high-gloss/white clear glass, 180x42x48 cm
         </Description>
-        <Qty>
+		<Qty>
             3
         </Qty>
-        <Price>
-           €325
-        </Price>
-        <Image>
+		<Image>
            https://www.ikea.com/ie/en/images/products/besta-tv-bench-white-stained-oak-effect-selsviken-nannarp-high-gloss-white-clear-glass__0643086_pe701663_s5.jpg?f=m
         </Image>
-        <Category>
+		<Category>
             midia Furniture
         </Category>
-        <Room>
+		<Room>
             Living room
         </Room>
-    </Product>
-    <Product>
-        
-        <Name>
+	</Product>
+	<Product code="010-259">
+		<Name>
          BESTÅ
         </Name>
-        <Code>
-          553-323
-        </Code>
-        <Description>
+		<Description>
             TV storage combination/glass doors, black-brown/Selsviken high-gloss/black clear glass, 240x42x129 cm
         </Description>
-        <Qty>
+		<Qty>
             2
         </Qty>
-        <Price>
+		<Price>
            €420
         </Price>
-        <Image>
+		<Image>
            https://www.ikea.com/ie/en/images/products/besta-tv-storage-combination-glass-doors-black-brown-selsviken-high-gloss-black-clear-glass__0649697_pe705698_s5.jpg?f=m
         </Image>
-        <Category>
+		<Category>
            midia Furniture
         </Category>
-        <Room>
+		<Room>
             Living room
         </Room>
-    </Product>
+	</Product>	
+	<Product code="114-444">
+		<Name>
+         LOBERGET
 
-     <Product>
-        
-        <Name>
-         LACK
         </Name>
-        <Code>
-          887-009
-        </Code>
-        <Description>
-            TV bench, white, 90x26x45 cm
+		<Description>
+           Swivel chair, white
+            Last chance to buy
         </Description>
-        <Qty>
-            21
+		<Qty>
+           11
         </Qty>
-        <Price>
-           €19
+		<Price>
+           €29
         </Price>
-        <Image>
-           https://www.ikea.com/ie/en/images/products/lack-tv-bench-white__0625061_pe692088_s5.jpg?f=m
+		<Image>
+           https://www.ikea.com/ie/en/images/products/loberget-blyskaer-swivel-chair-white__0806543_pe770241_s5.jpg?f=xl
         </Image>
-        <Category>
-            midia Furniture
+		<Category>
+           Office
         </Category>
-        <Room>
-            Living room
+		<Room>
+           Office
         </Room>
-    </Product>
-    <Product>
-        
-        <Name>
-    Swivel chair
+	</Product>
+	<Product code="332-518">
+		<Name>
+         ELLOVEN
+
         </Name>
-        <Code>
-         700-990
-        </Code>
-        <Description>
-          , beige/white
-Last chance to buy
+		<Description>
+           Monitor stand with drawer, white
 
         </Description>
-        <Qty>
+		<Qty>
+           19
+        </Qty>
+		<Price>
+           €29
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/elloven-monitor-stand-with-drawer-white__0955984_pe804426_s5.jpg?f=xl
+        </Image>
+		<Category>
+           Office
+        </Category>
+		<Room>
+           Office
+        </Room>
+	</Product>
+	<Product code="199-277">
+		<Name>
+         MOPPE
+        </Name>
+		<Description>
+           Mini chest of drawers, birch plywood, 42x18x32 cm
+        </Description>
+		<Qty>
+           14
+        </Qty>
+		<Price>
+           €29
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/moppe-mini-chest-of-drawers-birch-plywood__0135959_pe292948_s5.jpg?f=xl
+        </Image>
+		<Category>
+           Office
+        </Category>
+		<Room>
+           Office
+        </Room>
+	</Product>
+	<Product code="342-173">
+		<Name>
+         SIGFINN
+        </Name>
+		<Description>
+           Monitor stand, fixed height, bamboo veneer
+        </Description>
+		<Qty>
+          77 
+        </Qty>
+		<Price>
+           €25
+        </Price>
+		<Image>
+           https://www.ikea.com/ie/en/images/products/sigfinn-monitor-stand-fixed-height-bamboo-veneer__0491333_pe625002_s5.jpg?f=xl
+        </Image>
+		<Category>
+           Office
+        </Category>
+		<Room>
+           Office
+        </Room>
+	</Product>
+	<Product code="444-981">
+		<Name>
+         KVISSLE
+        </Name>
+		<Description>
+           Letter tray, white
+        </Description>
+		<Qty>
+           8
+        </Qty>
+		<Price>
            5
-        </Qty>
-        <Price>
-         €39
         </Price>
-        <Image>
-           https://www.ikea.com/ie/en/images/products/eldberget-blyskaer-swivel-chair-beige-white__0966204_pe809705_s5.jpg?f=m
+		<Image>
+           https://www.ikea.com/ie/en/images/products/kvissle-letter-tray-white__0775011_pe756792_s5.jpg?f=xl
         </Image>
-        <Category>
-            home office
+		<Category>
+           Office
         </Category>
-        <Room>
-            office
+		<Room>
+           Office
         </Room>
-        </Product>
-         <Product>
-        
-         <Name>
-         TJENA
+	</Product>
+    <Product code="444-981">
+		<Name>
+         KVISSLE
         </Name>
-        <Code>
-        511-111
-        </Code>
-        <Description>
-        Desk organiser, white, 18x17 cm
+		<Description>
+           Letter tray, white
         </Description>
-        <Qty>
-        2
+		<Qty>
+           8
         </Qty>
-        <Price>
-         €7
+		<Price>
+           5
         </Price>
-        <Image>
-           https://www.ikea.com/ie/en/images/products/eldberget-blyskaer-swivel-chair-beige-white__0966204_pe809705_s5.jpg?f=m
+		<Image>
+           https://www.ikea.com/ie/en/images/products/kvissle-letter-tray-white__0775011_pe756792_s5.jpg?f=xl
         </Image>
-        <Category>
-            home office
+		<Category>
+           Office
         </Category>
-        <Room>
-            office
+		<Room>
+           Office
         </Room>
-    </Product>
-      <Product>
-        
-         <Name>
-            DRÖNJÖNS
-        </Name>
-        <Code>
-        333-111
-        </Code>
-        <Description>
-        Desk organiser, white, 25x20 cm
-        </Description>
-        <Qty>
-        9
-        </Qty>
-        <Price>
-         €12
-        </Price>
-        <Image>
-           https://www.ikea.com/ie/en/images/products/eldberget-blyskaer-swivel-chair-beige-white__0966204_pe809705_s5.jpg?f=m
-        </Image>
-        <Category>
-            home office
-        </Category>
-        <Room>
-            office
-        </Room>
-        </Product>
-         <Product>
-        
-         <Name>
-        MALM
-        </Name>
-        <Code>
-        754-309
-        </Code>
-        <Description>
-        Desk with pull-out panel, white, 151x65 cm
-        </Description>
-        <Qty>
-        22
-        </Qty>
-        <Price>
-         €129
-        </Price>
-        <Image>
-           https://www.ikea.com/ie/en/images/products/eldberget-blyskaer-swivel-chair-beige-white__0966204_pe809705_s5.jpg?f=m
-        </Image>
-        <Category>
-            home office
-        </Category>
-        <Room>
-            office
-        </Room>
-    </Product>
-         <Product>
-        
-         <Name>
-    LERHAMN
-
-        </Name>
-        <Code>
-    784-165
-        </Code>
-        <Description>
-        Table and 2 chairs, light antique stain white stain/Vittaryd beige, 74x74 cm
-        </Description>
-        <Qty>
-        11
-        </Qty>
-        <Price>
-        €159
-        </Price>
-        <Image>
-           https://www.ikea.com/ie/en/images/products/eldberget-blyskaer-swivel-chair-beige-white__0966204_pe809705_s5.jpg?f=m
-        </Image>
-        <Category>
-           dinning
-        </Category>
-        <Room>
-            kitchen
-        </Room>
-    </Product>
-    <Product>
-        
-         <Name>
-            SIGFINN
-        </Name>
-        <Code>
-        569-736
-        </Code>
-        <Description>
-        Monitor stand, fixed height, bamboo veneer
-        </Description>
-        <Qty>
-        25
-        </Qty>
-        <Price>
-         €25
-        </Price>
-        <Image>
-           https://www.ikea.com/ie/en/images/products/eldberget-blyskaer-swivel-chair-beige-white__0966204_pe809705_s5.jpg?f=m
-        </Image>
-        <Category>
-            home office
-        </Category>
-        <Room>
-            office
-        </Room>
-    </Product>
-
-
+	</Product>
 </Inventory>
