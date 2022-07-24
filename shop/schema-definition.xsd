@@ -1,0 +1,22 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Inventory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Product">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Name"/>
+              <xs:element type="xs:string" name="Description"/>
+              <xs:element type="xs:float" name="Qty"/>
+              <xs:element type="xs:string" name="Price"/>
+              <xs:element type="xs:string" name="Image"/>
+              <xs:element type="xs:string" name="Category"/>
+              <xs:element type="xs:string" name="Room"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="code"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
