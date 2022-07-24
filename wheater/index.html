@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    
+    <div style="width:25%; height:7%; position:absolute;background-color:#2F4261;left:1vw;top:5vw;display: flex;flex-direction: row;justify-content: space-around;">
+            <img onclick="search()" id="seachimg"style="color:white;width:10%; height: auto;"src="./assets/search.png">
+            <input id="search" style="height:100%;width:90%;background-color: #2F4261;border: none;">
+    </div>
+	<div id="cont">
+        <div id="cont1">
+                <div style="width: 100%; height:33.84%; display:flex;flex-direction: row;">
+                    <div style="width: 60%;height:100%; display: flex; flex-direction: column;justify-content: space-around; align-items: flex-start;">
+                            <div id="city" style="color:#FCFEFF; font-size: 2vw;">
+                                    rio de janeiro
+                            </div>
+                            <div id="country" style="color: #7D8CA2; font-size: vw;" >
+                                    Brazil
+                            </div>
+                    </div>
+                    <div style="width: 40%;height:100%;color:#FCFEFF; font-size: 2vw;display:flex; flex-direction:column; justify-content: center;align-items: flex-end;" id="time">
+                            08:54 am
+                    </div>
+                </div>
+
+                <div style="width: 100%;height:50%; display: flex;">
+                            <div style="height: 100%;width: 55%; display:flex; flex-direction:column; justify-content: center;align-items: flex-start; ">
+                                <img style="width:30%; height: auto;" id="icon" src=" http://openweathermap.org/img/wn/03n@2x.png">
+                                <div id="temperature" style="color:white; font-size:3vw">
+                                    20° C
+                                </div>
+                            </div>
+                            <div id="weather-discr"style="height: 100%;width: 45%;color: white;display:flex; flex-direction:column; justify-content: center;align-items: flex-end" >
+                                Damatic Cloudy
+                            </div>
+                </div>
+        </div>
+        <div id="cont2">
+           
+            <div id="title" style="width:100%; height:14.75%;color: white; font-size: 1.5vw;">Chance of rain</div>
+            
+            
+            <div id="cont-time1" style="width:100%; height:14.75%;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                <div id="time1" style="color: white;width: 7%;">7 am</div>
+                    <div style="background-color:#2F4261;height: 100%;width: 70%;border-radius:30px;">
+                       <div id="rain1" style="width:44%;height:100%;background-color:#93B1F6;border-radius:30px;"></div>
+                    </div>
+                <div id="probability1" style="color: white; ">44%</div>
+            </div>
+            
+            <div id="cont-time1" style="width:100%; height:14.75%;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                <div id="time2" style="color: white;width: 7%;">8 am</div>
+                    <div style="background-color:#2F4261;height: 100%;width: 70%;border-radius:30px;">
+                       <div id="rain2" style="width:30%;height:100%;background-color:#93B1F6;border-radius:30px;"></div>
+                    </div>
+                <div id="probability2" style="color: white;">30%</div>
+            </div>
+            
+            <div id="cont-time1" style="width:100%; height:14.75%;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                <div id="time3" style="color: white;width: 7%;">9 am</div>
+                    <div style="background-color:#2F4261;height: 100%;width: 70%;border-radius:30px;">
+                       <div id="rain3" style="width:67%;height:100%;background-color:#93B1F6;border-radius:30px;"></div>
+                    </div>
+                <div id="probability3" style="color: white;">67%</div>
+            </div>
+            
+            <div id="cont-time1" style="width:100%; height:14.75%;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                <div id="time4" style="color: white;">10 am</div>
+                    <div style="background-color:#2F4261;height: 100%;width: 70%;border-radius:30px;">
+                       <div id="rain4" style="width:72%;height:100%;background-color:#93B1F6;border-radius:30px;"></div>
+                    </div>
+                <div id="probability4" style="color: white;">72%</div>
+            </div>
+            
+        </div>
+        <div id="cont3">
+            Sunrise & sunset
+
+            <div style="width: 100%; height:36.47%;background-color:#30446F ;border-radius: 5px; display:flex; flex-direction: column; justify-content: center;">
+
+                <div style="width:46.84%; height:57.3%;display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                    <img style="width:15%;height:auto;" src="./assets/sunrise.png">
+                    <div style="color:#D2E1FC; font-size:1.5vw ">
+                        Sunrise
+                        <div id="sunrise-time" style="color:white; font-size:2vw "></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="width: 100%; height:36.47%;background-color:#30446F ;border-radius: 5px; display:flex; flex-direction: column; justify-content: center;">
+                <div style="width:46.84%; height:57.3%;display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                    <img style="width:15%;height:auto;" src="./assets/sunset.png">
+                    <div style="color:#D2E1FC; font-size:1.5vw ">
+                        Sunset
+                        <div id="sunset-time" style="color:white; font-size:2vw "></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </body>
+  <script>
+    let data //Global var that holds the data.
+fetch('http://api.openweathermap.org/data/2.5/forecast?mode=json&q=vitoria&appid=d2249d4b482c23cb21f28b71d85fe5c8&units=metric').then(response =>{
+       response.json().then(response => {
+        console.log(response)
+        data = response
+        updateUI()
+    })
+    })
+    function hourMin(stamp,timeZone)
+    {
+        
+
+        const date = new Date((stamp+timeZone)*1000);
+        let hours = date.getHours()
+        
+       return hours
+    }
+    function updateUI(){
+        document.querySelector('#city').textContent = data.city.name
+        document.querySelector('#country').textContent = data.city.country
+
+        let timeZone = data.city.timezone
+
+        let sunSet = new Date((data.city.sunset+timeZone)*1000)
+        document.querySelector('#sunset-time').textContent = sunSet.getHours()+":"+sunSet.getMinutes() +" PM"
+        
+        let sunRise = new Date((data.city.sunrise+timeZone)*1000)
+        document.querySelector('#sunrise-time').textContent = sunRise.getHours()+":"+sunRise.getMinutes() +" AM"
+        document.querySelector('#temperature').textContent = data.list['0']['main']['temp']
+
+        let icon = data.list['0']['weather']['0']['icon']
+        let url  = "http://openweathermap.org/img/wn/"+icon+"@2x.png"
+        document.querySelector('#icon').src = url
+        document.querySelector('#weather-discr').textContent = data.list['0']['weather']['0']['description']
+
+        
+        let pop1 = data.list['0']['pop'] * 100
+        let pop2 = data.list['1']['pop'] * 100
+        let pop3 = data.list['2']['pop'] * 100
+        let pop4 = data.list['3']['pop'] * 100
+
+        document.querySelector('#rain1').style.width = pop1.toString() + "%";
+        document.querySelector('#rain2').style.width = pop2.toString() + "%";
+        document.querySelector('#rain3').style.width = pop3.toString() + "%";
+        document.querySelector('#rain4').style.width = pop4.toString() + "%";
+
+        document.querySelector('#probability1').textContent = pop1.toFixed().toString() + "%"
+        document.querySelector('#probability2').textContent = pop2.toFixed().toString() + "%"
+        document.querySelector('#probability3').textContent = pop3.toFixed().toString() + "%"
+        document.querySelector('#probability4').textContent = pop4.toFixed().toString() + "%"
+
+        let hours = hourMin(data.list['0']['dt'],timeZone)
+        document.querySelector('#time1').textContent = hours
+        hours = hourMin(data.list['1']['dt'],timeZone)
+        document.querySelector('#time2').textContent = hours
+        hours = hourMin(data.list['2']['dt'],timeZone)
+        document.querySelector('#time3').textContent = hours
+        hours = hourMin(data.list['3']['dt'],timeZone)
+        document.querySelector('#time4').textContent = hours
+
+    }
+    function search(){
+        let val = document.getElementById("search").value
+        fetch('http://api.openweathermap.org/data/2.5/forecast?mode=json&q='+val+'&appid=d2249d4b482c23cb21f28b71d85fe5c8&units=metric').then(response =>{
+       response.json().then(response => {
+        console.log(response)
+        data = response
+        updateUI()
+    })
+    })
+    }
+
+    // Get the input field
+    var input = document.querySelector("#search");
+
+    // Execute a function when the user presses a key on the keyboard
+    input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("seachimg").click();
+    }
+    });
+  </script>
+</html>

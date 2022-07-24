@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>HTML 5 Boilerplate</title>
+        <title>Furniture Shop</title>
         <link rel="stylesheet" href="./style.css">
       
     </head>
@@ -68,6 +68,9 @@
     </body>
 
     <script>
+        fetch('http://api.openweathermap.org/data/2.5/forecast?mode=json&q=paris&appid=d2249d4b482c23cb21f28b71d85fe5c8&units=metric').then(response =>{
+           response.json().then(response => {console.log(response)})
+        })
         // Creating an object called xhttp
         var xhttp = new XMLHttpRequest();
         let xml ; // global var used to hold loaded xml data
