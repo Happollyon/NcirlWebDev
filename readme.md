@@ -2,6 +2,8 @@
 ## Web application requirements
 
 ### #shop
+
+#### *Disclaimer: them images used in this project belong to www.ikea.ie*
 Assume that you are responsible for developing, maintaining, and updating a third-party company's
 web application. The web application provides information of all products manufactured by the
 company and allows users to query the inventory for products availability.
@@ -30,6 +32,7 @@ Allows the searching of these products by providing a field that the user can en
 The pages must have a navigation menu that allows the user to navigate through the different web application pages.
 
 ### #weather
+
 Assume that OpenWeatherMap (https://openweathermap.org/) have contacted you to develop an application, with them providing a web service for you to use.
 
 You need to develop an application that allows a user to enter a single city (on a HTML page) and request the OpenWeatherMap web service to retrieve this information and render this information to the web page.
